@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>CocoClicker</title>
+</head>
+<body>
+    <div class="cont">
+        <div id="main"  class="del" onclick="del()">[ By Dmitry Lebedev ]</div>
+        <img class="logo" src="./logo1.png" alt="">
+        <div class="area">
+            <img class="coc" src="./coc.png" alt="" onclick="clic()">
+            <div class="sct">0</div>
+            <div class="sct2">Coconuts</div>
+        </div>
+        <a class="none" href="#c">
+            <div class="title">-=-=-= Shop =-=-=-</div>
+        </a>
+        <div class="upgrade">
+            <div class="up_txt1">
+                . Coco-Cracker .
+            </div>
+            <div class="amount">
+                x <div class="am1">0</div>
+            </div>
+            <img class="up_img" src="./ham.png" id="c" alt="">
+            <div>
+                <div class="price1">
+                    <div class="price">50</div>
+                </div>
+            </div>
+            <div class="price2">CLicks</div>
+            <div>
+                <img class="buy" src="./btn.png" alt="" onclick="buyc()">
+            </div>
+            <div class="desc">( +1 Coconut per Click )</div>
+        </div>
+        <div class="upgrade">
+            <div class="up_txt1">
+                . The Monkey .
+            </div>
+            <div class="amount">
+                x <div class="am2">0</div>
+            </div>
+            <img class="up_img" src="./monk.gif" id="c" alt="">
+            <div>
+                <div class="price1">
+                    <div class="price3">100</div>
+                </div>
+            </div>
+            <div class="price2">CLicks</div>
+            <div>
+                <img class="buy2" src="./btn.png" alt="" onclick="buyc2()">
+            </div>
+            <div class="desc">( +1 Coconut per Second )</div>
+        </div>
+        <div class="upgrade">
+            <div class="up_txt1">
+                . The Coco-Stand .
+            </div>
+            <div class="amount">
+                x <div class="am3">0</div>
+            </div>
+            <img class="up_img" src="./stand.gif" id="c" alt="">
+            <div>
+                <div class="price1">
+                    <div class="price4">1000</div>
+                </div>
+            </div>
+            <div class="price2">CLicks</div>
+            <div>
+                <img class="buy3" src="./btn.png" alt="" onclick="buyc3()">
+            </div>
+            <div class="desc">( +300 Coconuts per minute )</div>
+        </div>
+        <div class="upgrade">
+            <div class="up_txt1">
+                . The Monkey Office .
+            </div>
+            <div class="amount">
+                x <div class="am4">0</div>
+            </div>
+            <img class="up_img" src="./office.gif" id="c" alt="">
+            <div>
+                <div class="price1">
+                    <div class="price5">5000</div>
+                </div>
+            </div>
+            <div class="price2">CLicks</div>
+            <div>
+                <img class="buy4" src="./btn.png" alt="" onclick="buyc4()">
+            </div>
+            <div class="desc">( +50 Coconuts per second )</div>
+        </div>
+        <div class="upgrade">
+            <div class="up_txt1">
+                . The Coco-Mart .
+            </div>
+            <div class="amount">
+                x <div class="am5">0</div>
+            </div>
+            <img class="up_img" src="./mart.png" id="c" alt="">
+            <div>
+                <div class="price1">
+                    <div class="price6">10000</div>
+                </div>
+            </div>
+            <div class="price2">CLicks</div>
+            <div>
+                <img class="buy5" src="./btn.png" alt="" onclick="buyc5()">
+            </div>
+            <div class="desc">( +2000 Coconuts per minute )</div>
+        </div>
+        <div class="upgrade">
+            <div class="up_txt1">
+                . The Coco-zon .
+            </div>
+            <div class="amount">
+                x <div class="am6">0</div>
+            </div>
+            <img class="up_img" src="./amaz.gif" id="c" alt="">
+            <div>
+                <div class="price1">
+                    <div class="price7">50000</div>
+                </div>
+            </div>
+            <div class="price2">CLicks</div>
+            <div>
+                <img class="buy6" src="./btn.png" alt="" onclick="buyc6()">
+            </div>
+            <div class="desc">( +400 Coconuts per second )</div>
+        </div>
+        <div class="upgrade">
+            <div class="up_txt1">
+                . The Coco-Cult .
+            </div>
+            <div class="amount">
+                x <div class="am7">0</div>
+            </div>
+            <img class="up_img" src="./monk2.gif" id="c" alt="">
+            <div>
+                <div class="price1">
+                    <div class="price8">120000</div>
+                </div>
+            </div>
+            <div class="price2">CLicks</div>
+            <div>
+                <img class="buy7" src="./btn.png" alt="" onclick="buyc7()">
+            </div>
+            <div class="desc">( +10,000 Coconuts per minute )</div>
+        </div>
+        <div class="upgrade">
+            <div class="up_txt1">
+                . The Coco-Country .
+            </div>
+            <div class="amount">
+                x <div class="am8">0</div>
+            </div>
+            <img class="up_img" src="./flag.gif" id="c" alt="">
+            <div>
+                <div class="price1">
+                    <div class="price9">500000</div>
+                </div>
+            </div>
+            <div class="price2">CLicks</div>
+            <div>
+                <img class="buy8" src="./btn.png" alt="" onclick="buyc8()">
+            </div>
+            <div class="desc">( +1500 Coconuts per second )</div>
+        </div>
+        <div class="upgrade">
+            <div class="up_txt1">
+                . The Coco-Bomb .
+            </div>
+            <div class="amount">
+                x <div class="am9">0</div>
+            </div>
+            <img class="up_img" src="./bomb.png" id="c" alt="">
+            <div>
+                <div class="price1">
+                    <div class="price10">1000000</div>
+                </div>
+            </div>
+            <div class="price2">CLicks</div>
+            <div>
+                <img class="buy9" src="./btn.png" alt="" onclick="buyc9()">
+            </div>
+            <div class="desc">( +300,000 Coconuts per minute )</div>
+        </div>
+        <div class="upgrade">
+            <div class="up_txt1">
+                . The Coco-Star .
+            </div>
+            <img class="up_img" src="./star.png" id="c" alt="">
+            <div>
+                <div class="price1">
+                    <div class="price11">25000000</div>
+                </div>
+            </div>
+            <div class="price2">CLicks</div>
+            <div>
+                <img class="buy10" src="./btn.png" alt="" onclick="buyc10()">
+            </div>
+            <div class="desc">( The End )</div>
+        </div>
+        <img class="achi" src="./achiv.png" alt="">
+    </div>
+
+    <script>
+     let buy = document.querySelector(".buy");
+     let buy2 = document.querySelector(".buy2");
+     let buy3 = document.querySelector(".buy3");
+     let buy4 = document.querySelector(".buy4");
+     let buy5 = document.querySelector(".buy5");
+     let buy6 = document.querySelector(".buy6");
+     let buy7 = document.querySelector(".buy7");
+     let buy8 = document.querySelector(".buy8");
+     let buy9 = document.querySelector(".buy9");
+     let buy10 = document.querySelector(".buy10");
+     let coc = document.querySelector(".coc");
+     let multi = 1;
+     let sct = document.querySelector(".sct");
+     let sc = 0;
+     let pric1 = document.querySelector(".price");
+     let pr1 = 50;
+     let am1 = document.querySelector(".am1")
+     let am2 = document.querySelector(".am2")
+     let am3 = document.querySelector(".am3")
+     let am4 = document.querySelector(".am4")
+     let am5 = document.querySelector(".am5")
+     let am6 = document.querySelector(".am6")
+     let am7 = document.querySelector(".am7")
+     let am8 = document.querySelector(".am8")
+     let am9 = document.querySelector(".am9")
+     let up1 = 0;
+     let up2 = 0;
+     let up3 = 0;
+     let up4 = 0;
+     let up5 = 0;
+     let up6 = 0;
+     let up7 = 0;
+     let up8 = 0;
+     let up9 = 0;
+     let pric2 = document.querySelector(".price3");
+     let pr2 = 100;
+     let pric3 = document.querySelector(".price4");
+     let pr3 = 1000;
+     let pric4 = document.querySelector(".price5");
+     let pr4 = 5000;
+     let pric5 = document.querySelector(".price6");
+     let pr5 = 10000;
+     let pric6 = document.querySelector(".price7");
+     let pr6 = 50000;
+     let pric7 = document.querySelector(".price8");
+     let pr7 = 120000;
+     let pric8 = document.querySelector(".price9");
+     let pr8 = 500000;
+     let pric9 = document.querySelector(".price10");
+     let pr9 = 1000000;
+     let pric10 = document.querySelector(".price11");
+     let pr10 = 25000000;
+     let achi = document.querySelector(".achi");
+
+     setInterval(() => {
+        sct.innerHTML = sc;
+     }, 10);
+
+     function clic() {
+        sc = sc+multi;
+        sct.innerHTML = sc;
+        coc.style.transform = "scale(0.9)";
+        setTimeout(() => {
+            coc.style.transform = "scale(1)";
+            }, 40);
+     }
+          
+     function del() {
+        location.reload();
+     }
+
+     function buyc() {
+        if (sc >= pr1) {
+            sc = sc-pr1;
+            pr1 = pr1+50;
+            pric1.innerHTML = pr1;
+            up1 = up1+1;
+            multi = multi+1;
+            am1.innerHTML = up1;
+            buy.style.transform = "scale(0.9)";
+            setTimeout(() => {
+            buy.style.transform = "scale(1)";
+            }, 40);
+        }
+     }
+     function timer() {
+        sc=sc+1;
+     }
+     function timer2() {
+        sc=sc+300;
+     }
+     function timer3() {
+        sc=sc+50;
+     }
+     function timer4() {
+        sc=sc+2000;
+     }
+     function timer5() {
+        sc=sc+400;
+     }
+     function timer6() {
+        sc=sc+10000;
+     }
+     function timer7() {
+        sc=sc+1500;
+     }
+     function timer8() {
+        sc=sc+30000;
+     }
+
+     function buyc2() {
+        if (sc >= pr2) {
+            setInterval(timer, 1000)
+            sc = sc-pr2;
+            pr2 = pr2+50;
+            pric2.innerHTML = pr2;
+            up2 = up2+1;
+            am2.innerHTML = up2;
+            buy2.style.transform = "scale(0.9)";
+            setTimeout(() => {
+            buy2.style.transform = "scale(1)";
+            }, 40);
+        }
+     }
+     function buyc3() {
+        if (sc >= pr3) {
+            setInterval(timer2, 60000)
+            sc = sc-pr3;
+            pr3 = pr3+500;
+            pric3.innerHTML = pr3;
+            up3 = up3+1;
+            am3.innerHTML = up3;
+            buy3.style.transform = "scale(0.9)";
+            setTimeout(() => {
+            buy3.style.transform = "scale(1)";
+            }, 40);
+        }
+     }
+     function buyc4() {
+        if (sc >= pr4) {
+            setInterval(timer3, 1000)
+            sc = sc-pr4;
+            pr4 = pr4+1200;
+            pric4.innerHTML = pr4;
+            up4 = up4+1;
+            am4.innerHTML = up4;
+            buy4.style.transform = "scale(0.9)";
+            setTimeout(() => {
+            buy4.style.transform = "scale(1)";
+            }, 40);
+        }
+     }
+     function buyc5() {
+        if (sc >= pr5) {
+            setInterval(timer4, 60000)
+            sc = sc-pr5;
+            pr5 = pr5+5000;
+            pric5.innerHTML = pr5;
+            up5 = up5+1;
+            am5.innerHTML = up5;
+            buy5.style.transform = "scale(0.9)";
+            setTimeout(() => {
+            buy5.style.transform = "scale(1)";
+            }, 40);
+        }
+     }
+     function buyc6() {
+        if (sc >= pr6) {
+            setInterval(timer5, 1000)
+            sc = sc-pr6;
+            pr6 = pr6+10000;
+            pric6.innerHTML = pr6;
+            up6 = up6+1;
+            am6.innerHTML = up6;
+            buy6.style.transform = "scale(0.9)";
+            setTimeout(() => {
+            buy6.style.transform = "scale(1)";
+            }, 40);
+        }
+     }
+     function buyc7() {
+        if (sc >= pr7) {
+            setInterval(timer6, 60000)
+            sc = sc-pr7;
+            pr7 = pr7+30000;
+            pric7.innerHTML = pr7;
+            up7 = up7+1;
+            am7.innerHTML = up7;
+            buy7.style.transform = "scale(0.9)";
+            setTimeout(() => {
+            buy7.style.transform = "scale(1)";
+            }, 40);
+        }
+     }
+     function buyc8() {
+        if (sc >= pr8) {
+            setInterval(timer7, 1000)
+            sc = sc-pr8;
+            pr8 = pr8+100000;
+            pric8.innerHTML = pr8;
+            up8 = up8+1;
+            am8.innerHTML = up8;
+            buy8.style.transform = "scale(0.9)";
+            setTimeout(() => {
+            buy8.style.transform = "scale(1)";
+            }, 40);
+        }
+     }
+     function buyc9() {
+        if (sc >= pr9) {
+            setInterval(timer8, 60000)
+            sc = sc-pr9;
+            pr9 = pr9+250000;
+            pric9.innerHTML = pr9;
+            up9 = up9+1;
+            am9.innerHTML = up9;
+            buy9.style.transform = "scale(0.9)";
+            setTimeout(() => {
+            buy9.style.transform = "scale(1)";
+            }, 40);
+        }
+     }
+
+     function buyc10() {
+        if (sc >= pr10) {
+            pric10.innerHTML = '0'
+            achi.style.display = 'block';
+            buy10.style.transform = "scale(0.9)";
+            setTimeout(() => {
+            buy10.style.transform = "scale(1)";
+            }, 40);
+        }
+     }
+    </script>
+    
+    <style>
+        body{
+            font-family: 'Press Start 2P';
+            background-color: #342220;
+        }
+        .desc{
+            font-size: 10px;
+            color: rgb(150, 150, 150);
+            position: relative;
+            text-align: center;
+            top: 20px;
+        }
+        .none{
+            text-decoration: none;
+        }
+        .cont{
+            margin: 0 auto;
+            width: 1290px;
+            /* display: none; */
+        }
+        .coc{
+            width: 200px;
+            height: 200px;
+            position: relative;
+            left: 545px;
+            top: 100px;
+        }
+        .sct{
+            font-size: 32px;
+            color: white;
+            position: relative;
+            text-align: center;
+            top: 120px;
+        }
+        .sct2{
+            font-size: 18px;
+            color: rgb(219, 219, 219);
+            position: relative;
+            text-align: center;
+            margin-top: 130px;
+            margin-bottom: 170px;
+        }
+        .title{
+            color: #fff;
+            font-size: 40px;
+            text-align: center;
+            margin-top: 120px;
+        }
+        .up_img{
+            width: 200px;
+            height: 200px;
+            margin-left: 546px;
+            margin-bottom: 20px;
+        }
+        .up_txt1{
+            color: #aaaaaa;
+            font-size: 24px;
+            text-align: center;
+            margin-top: 120px;
+        }
+        .amount{
+            color: #ffffff;
+            width: 100px;
+            display: flex;
+            margin-left: 700px;
+            margin-top: 15px;
+            font-size: 18px;
+        }
+        .buy, .buy2{
+            width: 170px;
+            margin-left: 555px;
+        }
+        .price{
+            color: #fff;
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 12px;
+        }
+        .price2{
+            color: #fff;
+            font-size: 14px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .area{
+            margin-top: 300px;
+        }
+        .del{
+            color: #fff;
+            font-size: 14px;
+            text-align: right;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+        .price3{
+            color: #fff;
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 12px;
+        }
+        .price4{
+            color: #fff;
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 12px;
+        }
+        .price5{
+            color: #fff;
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 12px;
+        }
+        .price6{
+            color: #fff;
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 12px;
+        }
+        .price7{
+            color: #fff;
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 12px;
+        }
+        .price8{
+            color: #fff;
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 12px;
+        }
+        .price9{
+            color: #fff;
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 12px;
+        }
+        .price10{
+            color: #fff;
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 12px;
+        }
+        .price11{
+            color: #fff;
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 12px;
+        }
+        .logo{
+            width: 700px;
+            margin-left: 320px;
+            margin-bottom: -370px;
+            position: relative;
+            animation: my_animation 1.2s;
+            animation-fill-mode: both;
+        }
+        
+        @keyframes my_animation {
+         from {
+        left: -300px;
+        opacity: 0
+            }
+
+         to {
+        left: 0;
+        opacity: 1
+         }
+        }
+        .buy3{
+            width: 170px;
+            margin-left: 555px;
+        }
+        .buy4{
+            width: 170px;
+            margin-left: 555px;
+        }
+        .buy5{
+            width: 170px;
+            margin-left: 555px;
+        }
+        .buy6{
+            width: 170px;
+            margin-left: 555px;
+        }
+        .buy7{
+            width: 170px;
+            margin-left: 555px;
+        }
+        .buy8{
+            width: 170px;
+            margin-left: 555px;
+        }
+        .buy9{
+            width: 170px;
+            margin-left: 555px;
+        }
+        .buy10{
+            width: 170px;
+            margin-left: 555px;
+        }
+        .achi{
+            margin-top: -70px;
+            margin-left: 1000px;
+            width: 380px;
+            animation: my_animation2 1s;
+            margin-bottom: 50px;
+            display: none;
+        }
+        @keyframes my_animation2 {
+         from {
+        opacity: 0
+            }
+
+         to {
+        left: 0;
+        opacity: 1
+         }
+        }
+    </style>
+</body>
+</html>
